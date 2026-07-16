@@ -34,6 +34,11 @@ This pilot utilizes time-series RNA-Seq data to capture the transitional phases 
 * Statistical modeling of temporal gene expression kinetics using the **DESeq2** package in **R** (utilizing LRT/Likelihood Ratio Tests for time-course modeling).
 * Clustering of temporal expression profiles to group genes sharing similar activation kinetics (e.g., using **TCseq** or **Mfuzz**).
 
+### 4. Gene Co-Expression Network Analysis (GCN)
+* Construction of weighted co-expression networks using **WGCNA** (Weighted Gene Co-expression Network Analysis) to cluster genes with highly correlated temporal profiles into distinct modules.
+* Correlation of co-expression modules with specific infection stages (e.g., comparing host response during the *C. graminicola* biotrophic phase vs. the necrotrophic switch).
+* Topological network analysis to identify key **hub genes** (e.g., master transcription factors or receptor-like kinases) driving the immune response.
+
 ## Repository Organization
 * `/pilot-analysis`: Metadata templates and public dataset accessions for the Maize and *C. graminicola* time-course datasets.
 * `/scripts`: Documented pipeline templates for preprocessing, alignment, and R-based time-course modeling.
