@@ -207,7 +207,7 @@ $$Z = \frac{x - \mu}{\sigma}$$
 
 ## 11. References
 
-- Andrews, S. (2010). FastQC: a quality control tool for high throughput sequence data. Babraham Bioinformatics, Cambridge, UK.
+Andrews, S. (2010). FastQC: A quality control tool for high throughput sequence data [Computer software]. Babraham Bioinformatics. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 - Futschik, M. E., & Carlisle, B. (2005). Noise-robust soft clustering of gene expression time-course data. *Journal of Bioinformatics and Computational Biology*, 3(04), 965-988.
 - Kim, D. et al. (2019). Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype. *Nature Biotechnology*, 37(8), 907-915.
 - Langfelder et al. (2008). WGCNA: an R package for weighted correlation network analysis. *BMC Bioinformatics*, 9(1), 1-13.
