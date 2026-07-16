@@ -1,0 +1,41 @@
+# Conda environment for reproducible transcriptomics pipeline
+# Usage: conda env create -f environment.yml
+# For full reproducibility, use: conda env export > environment_lock.yml
+name: plant-pathogen-transcriptomics
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Quality Control
+  - fastqc=0.11.9
+  - fastp=0.23.4
+  - trimmomatic=0.39
+  
+  # Alignment & Quantification
+  - hisat2=2.2.1
+  - samtools=1.16
+  - subread=2.0.3        # featureCounts for read counting
+  - salmon=1.10.0
+  
+  # R & Bioconductor packages
+  - r-base=4.2.3
+  - bioconductor-deseq2=1.38.0
+  - bioconductor-edger=3.40.0
+  - bioconductor-limma=3.54.0       # For flexible differential expression
+  - r-ggplot2=3.4.2
+  - r-pheatmap=1.0.12
+  - r-tidyverse=2.0.0
+  
+  # Time-course clustering
+  - bioconductor-mfuzz=2.48.0       # Soft clustering for temporal patterns
+  
+  # Network analysis
+  - r-wgcna=1.72.0
+  - r-igraph=1.4.1
+  - r-ggraph=2.0.5
+  
+  # General utilities
+  - python=3.10
+  - pandas=1.5.3
+  - numpy=1.24.3
