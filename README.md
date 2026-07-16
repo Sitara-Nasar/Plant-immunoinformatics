@@ -130,9 +130,3 @@ wget [https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE34632&format=file](https
 # Or use SRA Toolkit for direct access
 prefetch SRR_accession_from_GSE210899
 prefetch SRR_accession_from_GSE34632
-
-# Create the environment from the provided environment.yml file
-conda env create -f environment.yml
-
-# Activate the environment
-conda activate plant-pathogen-transcriptomics
