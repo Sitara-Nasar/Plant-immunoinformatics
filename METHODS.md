@@ -205,9 +205,11 @@ $$Z = \frac{x - \mu}{\sigma}$$
 
 ## 10. References
 
-- Andrews, S. (2010). FastQC. Babraham Bioinformatics.
-- Kim, D., et al. (2015). HISAT: Fast spliced aligner with low memory requirements. *Nat Methods*, 12(4), 357-360.
-- Liao, Y., et al. (2013). featureCounts. *Bioinformatics*, 30(7), 923-930.
-- Love, M. I., et al. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biol*, 15(12), 550.
-- Langfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. *BMC Bioinformatics*, 9, 559.
-- Futschik, M. E., & Carlisle, B. (2005). Noise-robust soft clustering of gene expression time-course data. *J Bioinform Comput Biol*, 3(4), 965-988.
+## 11. References
+
+- Andrews, S. (2010). FastQC: a quality control tool for high throughput sequence data. Babraham Bioinformatics, Cambridge, UK.
+- Futschik, M. E., & Carlisle, B. (2005). Noise-robust soft clustering of gene expression time-course data. *Journal of Bioinformatics and Computational Biology*, 3(04), 965-988.
+- Kim, D. et al. (2019). Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype. *Nature Biotechnology*, 37(8), 907-915.
+- Langfelder et al. (2008). WGCNA: an R package for weighted correlation network analysis. *BMC Bioinformatics*, 9(1), 1-13.
+- Liao, Y. et al. (2014). featureCounts: an efficient general purpose program for assigning sequence reads to genomic features. *Bioinformatics*, 30(7), 923-930.
+- Love, M. I. et al. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology*, 15(12), 1-21.
