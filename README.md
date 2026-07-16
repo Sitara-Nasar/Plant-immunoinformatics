@@ -37,7 +37,7 @@ Users can fully replicate this workflow by:
 
 ---
 
-## 📊 Pilot Datasets & Experimental Design
+## Pilot Datasets & Experimental Design
 
 This pipeline utilizes time-series RNA-Seq data to capture the temporal progression of hemibiotrophic fungal infection, spanning the establishment phase through tissue colonization.
 
