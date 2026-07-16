@@ -65,5 +65,28 @@ wget [https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE210899&format=file](http
 wget [https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE34632&format=file](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE34632&format=file)
 
 # Or use SRA Toolkit for direct access
+
+## Environment Setup
+
+Create environment:
+```bash
+conda env create -f environment.yml
+conda activate plant-pathogen-transcriptomics
+```
+
+For full reproducibility (pins all transitive dependencies):
+```bash
+conda env export > environment_lock.yml
+```
+
+## Pipeline Tools
+
+- **QC:** fastqc, fastp, trimmomatic
+- **Quantification:** HISAT2 + featureCounts (or Salmon alternative)
+- **DE Analysis:** DESeq2, edgeR, limma
+- **Temporal Clustering:** Mfuzz (soft clustering for time-series)
+- **Network Analysis:** WGCNA, igraph
+
+Note: Choose EITHER HISAT2+featureCounts OR Salmon for quantification.
 prefetch [SRR_accession_from_GSE210899]
 prefetch [SRR_accession_from_GSE34632]
