@@ -119,34 +119,20 @@ This pipeline utilizes time-series RNA-Seq data to capture the temporal progress
 * **Analysis Objective:** Monitor temporal activation of fungal gene expression during pathogenic life-stage transitions.
 
 ### Data Download Instructions
+
+To download the raw data, you can use direct GEO downloads or fetch the runs via the SRA Toolkit:
+
 ```bash
 # Download via NCBI GEO
 wget [https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE210899&format=file](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE210899&format=file)
 wget [https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE34632&format=file](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE34632&format=file)
 
 # Or use SRA Toolkit for direct access
+prefetch SRR_accession_from_GSE210899
+prefetch SRR_accession_from_GSE34632
 
-## Environment Setup
-
-Create environment:
-```bash
+# Create the environment from the provided environment.yml file
 conda env create -f environment.yml
+
+# Activate the environment
 conda activate plant-pathogen-transcriptomics
-```
-
-For full reproducibility (pins all transitive dependencies):
-```bash
-conda env export > environment_lock.yml
-```
-
-## Pipeline Tools
-
-- **QC:** fastqc, fastp, trimmomatic
-- **Quantification:** HISAT2 + featureCounts (or Salmon alternative)
-- **DE Analysis:** DESeq2, edgeR, limma
-- **Temporal Clustering:** Mfuzz (soft clustering for time-series)
-- **Network Analysis:** WGCNA, igraph
-
-Note: Choose EITHER HISAT2+featureCounts OR Salmon for quantification.
-prefetch [SRR_accession_from_GSE210899]
-prefetch [SRR_accession_from_GSE34632]
